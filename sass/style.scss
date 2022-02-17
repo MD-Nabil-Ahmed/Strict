@@ -1,0 +1,515 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    width: 1115px;
+    margin: 0 auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.text_center {
+    text-align: center;
+}
+
+$font_fa: 'Lato',
+sans-serif;
+
+
+
+// ============================================================================================================================
+// common css end
+// =============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==============================================================================================================================
+// nav part start
+// ==============================================================================================================================
+#main_menu {
+    padding: 33px 0;
+
+    .cont_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo {
+        max-width: 20%;
+        width: 20%;
+    }
+
+    .menu {
+        max-width: 80%;
+        width: 80%;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+
+            li {
+                margin-left: 47px;
+
+                a {
+                    font-size: 24px;
+                    font-weight: 400;
+                    font-family: $font_fa;
+                    color: #222222;
+                }
+            }
+        }
+    }
+}
+
+.menu_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+}
+
+// ==============================================================================================================================
+// nav part end
+// ==============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==============================================================================================================================
+// banner part start
+// ==============================================================================================================================
+#banner {
+    padding: 281px 0 90px;
+}
+
+.text_area {
+    max-width: 600px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 120px;
+        font-weight: 700;
+        font-family: $font_fa;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: -10px;
+            left: 0;
+            height: 2px;
+            width: 600px;
+            background: #15a4fa;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        color: #fff;
+        font-family: $font_fa;
+        font-weight: 400;
+        margin-top: 45px;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 400;
+        font-family: $font_fa;
+        color: #fff;
+        padding: 20px 45px;
+        border: 1px solid #15a4fa;
+        margin-top: 60px;
+        border-radius: 3px;
+    }
+}
+
+.angle {
+    margin-top: 173px;
+
+    a {
+        color: #fff;
+    }
+}
+
+// ==============================================================================================================================
+// banner part end
+// ==============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==============================================================================================================================
+// portfolio part start
+// ==============================================================================================================================
+#portfolio {
+    padding: 70px 0 80px;
+    background: #f6f9f9;
+}
+
+.head_row {
+    h2 {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: $font_fa;
+        color: #2d3950;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: $font_fa;
+        color: #999999;
+        line-height: 32px;
+        margin-top: 15px;
+    }
+}
+
+// ==============================================================================================================================
+// portfolio part end
+// ==============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==============================================================================================================================
+// service part start
+// ==============================================================================================================================
+#service {
+    padding: 65px 0;
+}
+
+.ser_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .ser_col {
+        max-width: 30%;
+
+        h3 {
+            font-size: 22px;
+            color: #2d3950;
+            font-family: $font_fa;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #999999;
+            font-family: $font_fa;
+            font-weight: 400;
+            margin-top: 15px;
+        }
+
+    }
+}
+
+// ==============================================================================================================================
+// service part end
+// ==============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+// ==============================================================================================================================
+// showcase part start
+// ==============================================================================================================================
+#showcase {
+    padding: 70px 0 80px;
+    background: #f6f9f9;
+
+    .head_row {
+        margin-bottom: 70px;
+
+        h2 {
+            margin-bottom: -5px;
+        }
+    }
+
+    .img_row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .img_col {
+            max-width: 31.6%;
+            margin-bottom: 30px;
+            position: relative;
+
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .overly {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: #15a4fa;
+                opacity: 90%;
+                transform: scale(0);
+                transition: all linear .3s;
+
+                ul {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    a {
+                        border: 1px solid #fff;
+                        padding: 13px;
+                        margin-left: 10px;
+                        border-radius: 3px;
+                        color: #fff;
+                    }
+                }
+            }
+
+            &:hover .overly {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+// ==============================================================================================================================
+// showcase part end
+// ==============================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==============================================================================================================================
+// footer part start
+// ==============================================================================================================================
+#footer {
+    padding: 75px 0 0;
+    position: relative;
+    z-index: 1;
+
+    form {
+        max-width: 560px;
+        margin: 0 auto;
+        margin-bottom: 98px;
+
+        h2 {
+            font-size: 41px;
+            font-weight: 400;
+            font-family: $font_fa;
+            color: #fff;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 400;
+            font-family: $font_fa;
+            color: #999999;
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+
+        input {
+            padding: 20px 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            background: transparent;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: $font_fa;
+            color: #999999;
+            border: 1px solid #999999;
+            border-radius: 5px;
+        }
+
+        textarea {
+            padding: 70px 10px;
+            width: 100%;
+            background: transparent;
+            border: 1px solid #999999;
+            border-radius: 5px;
+            resize: none;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: $font_fa;
+            color: #999999;
+        }
+
+        button {
+            padding: 15px 50px;
+            margin-top: 10px;
+            background: transparent;
+            border: 1px solid #15a4fa;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #2d3950;
+        opacity: 90%;
+        z-index: -1;
+    }
+
+    .foot_bottom {
+        padding: 25px 0;
+        background: #fff;
+
+        .foot_row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .copyritht {
+                line-height: 41px;
+
+                p {
+                    font-size: 15px;
+                    font-weight: 400;
+                    font-family: $font_fa;
+                    color: #999999;
+                }
+            }
+
+            .link {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        margin: 0 5px;
+
+                        a {
+                            color: #fff;
+                            font-size: 15px;
+                            background: #15a4fa;
+                            padding: 12px 15px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==============================================================================================================================
+// footer part end
+// ==============================================================================================================================
+
+
+
+#bc_top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    z-index: 99999;
+    cursor: pointer;
+}
